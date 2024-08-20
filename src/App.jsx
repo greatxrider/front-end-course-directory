@@ -11,6 +11,7 @@ import { CSSCourses } from "./data/courses";
 import { JSCourses } from './data/courses';
 import NotFound from "./components/NotFound";
 import Featured from "./components/Featured";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,11 +27,12 @@ function App() {
           <Route path="html" element={<CourseContainer data={HTMLCourses} />} />
           <Route path="css" element={<CourseContainer data={CSSCourses} />} />
           <Route path="javascript" element={<CourseContainer data={JSCourses} />} />
-          {/* <Route path="*" element={<Navigate replace to="/404" />} /> */}
+          <Route path="*" element={<Navigate replace to="/404" />} />
         </Route>
-        {/* <Route path="*" element={<Navigate replace to="/404" />} /> */}
+        <Route path="*" element={<Navigate replace to="/404" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
