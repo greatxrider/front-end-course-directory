@@ -51,6 +51,7 @@ Open your browser and go to http://localhost:3000 to view the portfolio site. Na
 • HTML5
 • CSS3
 • JavaScript
+• React
 
 ## Project Structure
 project-root/
